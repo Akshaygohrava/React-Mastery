@@ -4,20 +4,22 @@ import ApiFetching from './Components/ApiFetching'
 import AxisOs from './Components/AxisOs'
 import ReactFormHook from './Components/ReactFormHook'
 import AxisOsCRUD from './Components/AxisOsCRUD'
+import TodoApp from './Mini-Projects/TodoApp'
 
 
 function App() {
 
   return (
     <>
-      <h1>Hello, Akshay Learning & Mastering React !</h1>
+      {/* <h1>Hello, Akshay Learning & Mastering React !</h1> */}
         
         {/* <ReactRouting></ReactRouting>
         <ApiFetching></ApiFetching> */}
 
-        <AxisOs></AxisOs>
+        {/* <AxisOs></AxisOs>
         <ReactFormHook></ReactFormHook>
-        <AxisOsCRUD></AxisOsCRUD>
+        <AxisOsCRUD></AxisOsCRUD> */}
+        <TodoApp></TodoApp>
 
 
 
