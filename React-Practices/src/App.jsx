@@ -5,6 +5,7 @@ import AxisOs from './Components/AxisOs'
 import ReactFormHook from './Components/ReactFormHook'
 import AxisOsCRUD from './Components/AxisOsCRUD'
 import TodoApp from './Mini-Projects/TodoApp'
+import Hooks from './Components/Hooks'
 
 
 function App() {
@@ -19,9 +20,11 @@ function App() {
         {/* <AxisOs></AxisOs>
         <ReactFormHook></ReactFormHook>
         <AxisOsCRUD></AxisOsCRUD> */}
-        <TodoApp></TodoApp>
+        {/* <TodoApp></TodoApp> */}
 
+       <h1 className='hover:bg-red-700 text-primary'>React Revision 2026</h1>
 
+       <Hooks></Hooks>
 
      
     </>
