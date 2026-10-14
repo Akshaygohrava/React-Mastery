@@ -26,6 +26,34 @@ const Hooks = () => {
 
     }
 
+    // Use Effect Hook 
+
+    useEffect(() => {
+        alert(`its run: ${count} times`);
+    },[count])   // its run whenever dependency changes its values
+
+
+    useEffect(() => {
+      alert("hello input ", `${input}`)
+    },[])
+
+
+    const [data, setData] = useState([]);
+    const apifetching = async () => {
+
+      try {
+        let api = await fetch("https://dummyjson.com/openapi.json");
+        let res = await api.json();
+        setData([res]);
+
+        
+      } catch (error) {
+        alert(error);
+      }
+    }
+    useEffect(() => {
+  apifetching();
+}, []);
       return (
         <>
           <h1>Learning React Hooks !</h1><br /><br />
@@ -59,6 +87,18 @@ const Hooks = () => {
                 ))
                 
                 }
+          </ul><br /><br />
+
+          <h1>UseEffect Hook</h1><br />
+
+          <ul>
+            {data.map((item) => {
+              return (
+                <>
+                      <li key={item.id}>{item.openapi}</li>
+                </>
+              )
+            })}
           </ul>
 
 
